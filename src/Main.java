@@ -8,7 +8,7 @@
  * You will read in multiple entries from the user and store the results in variables
  * You will then insert those variables into the following story to create a MadLib style result
  * 
- * A recent survey informs us that one out of every PLURALNOUN1 owns a/an ADJECTIVE1 phone. 
+ * A recent survey informs us that one out of every 3 PLURALNOUN1 owns a/an ADJECTIVE1 phone. 
  * Fortunately, VERB_ING_1 over a mobile NOUN1 in recent years has improved ADVERB1. 
  * Today, BODY_PART1-held PLURALNOUN2 are all the rage. 
  * In restaurants, you find many PLURALNOUN3 talking ADVERB2 into their ADJECTIVE2 phones as they eat their NOUN2. 
@@ -22,19 +22,27 @@
 import java.util.Scanner;
 public class Main {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		// YOUR CODE GOES HERE!!!!
 		
 		
 		
+		System.out.println("Give me a whole number");
+		int number1 = in.nextInt();
+		in.nextLine();
+		System.out.println("Give me a plural noun");
+		String pluralnoun4 = in.nextLine();
+		System.out.println("Give me another plural noun:");
+		String pluralnoun5 = in.nextLine();
 		
 		
 		
-		
-		
-		
-		
+		System.out.println("I saw "+number1+" "+pluralnoun4+" "+"(ENTER)");
+		in.nextLine();
+		System.out.println("and lots of "+pluralnoun5+" (ENTER)");
+		in.nextLine();
 		in.close();//Don't forget to clean up after yourselves!
 	}
 
